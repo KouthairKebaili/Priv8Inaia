@@ -1,0 +1,39 @@
+@import "variables";
+
+// Color utilities
+.color-primary {
+    color: $color-primary;
+}
+
+// Font family utilities
+.font-primary {
+    font-family: $font-family-primary;
+}
+.font-secondary {
+    font-family: $font-family-secondary;
+}
+
+// Font weight utilities
+.font-regular {
+    font-weight: $font-weight-regular;
+}
+.font-medium {
+    font-weight: $font-weight-medium;
+}
+.font-bold {
+    font-weight: $font-weight-bold;
+}
+.font-black {
+    font-weight: $font-weight-black;
+}
+
+// Font size utilities
+.font-size-16 {
+    font-size: $font-size-16
+}
+.font-size-24 {
+    font-size: $font-size-24
+}
+.font-size-36 {
+    font-size: $font-size-36
+}

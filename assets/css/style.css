@@ -1,0 +1,105 @@
+.color-primary {
+  color: #16317E;
+}
+
+.font-primary {
+  font-family: "Avenir", sans-serif;
+}
+
+.font-secondary {
+  font-family: "Noah", sans-serif;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-black {
+  font-weight: 900;
+}
+
+.font-size-16 {
+  font-size: 16pt;
+}
+
+.font-size-24 {
+  font-size: 24pt;
+}
+
+.font-size-36 {
+  font-size: 36pt;
+}
+
+.navbar {
+  z-index: 9999;
+}
+
+#navbar_top {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding-top: 102px;
+}
+
+.studies {
+  height: 70vh;
+  top: 50%;
+  text-align: left;
+  left: 10%;
+  width: 100%;
+}
+
+.btn {
+  background-color: #16317E;
+  color: white;
+  border-radius: 2.5rem;
+  padding: 16pt 26pt;
+  border: none;
+  height: 47pt;
+  line-height: 1;
+}
+.btn:hover {
+  background-color: white;
+  color: #16317E;
+}
+
+#carouselExampleDark.carousel {
+  max-height: 800pt;
+}
+#carouselExampleDark.carousel .carousel-indicators {
+  margin: 0;
+  gap: 0.5rem;
+  align-items: center;
+}
+#carouselExampleDark.carousel .carousel-indicators > button[data-bs-target] {
+  width: 12pt;
+  height: 12pt;
+  border: 0;
+  border-radius: 2.5rem;
+}
+#carouselExampleDark.carousel .carousel-inner .carousel-item {
+  height: 800pt;
+}
+#carouselExampleDark.carousel .carousel-inner .carousel-item > img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+#carouselExampleDark.carousel .carousel-inner .carousel-item .carousel-caption {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20pt;
+  text-align: left;
+  height: 100%;
+}/*# sourceMappingURL=style.css.map */
