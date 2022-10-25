@@ -4,6 +4,21 @@
 .color-primary {
     color: $color-primary;
 }
+.bg-primary {
+    background-color: $color-primary !important;
+}
+.color-white {
+    color: white;
+}
+.color-black {
+    color: black;
+}
+.color-accordion-legend {
+    color: $color-accordion-legend;
+}
+.bg-light {
+    background-color: $bg-light !important;
+}
 
 // Font family utilities
 .font-primary {
@@ -23,17 +38,52 @@
 .font-bold {
     font-weight: $font-weight-bold;
 }
-.font-black {
-    font-weight: $font-weight-black;
+.font-heavy {
+    font-weight: $font-weight-heavy;
 }
 
 // Font size utilities
+.font-size-12 {
+    font-size: $font-size-12
+}
+.font-size-14 {
+    font-size: $font-size-14
+}
 .font-size-16 {
     font-size: $font-size-16
+}
+.font-size-18 {
+    font-size: $font-size-18
 }
 .font-size-24 {
     font-size: $font-size-24
 }
+.font-size-32 {
+    font-size: $font-size-32
+}
 .font-size-36 {
     font-size: $font-size-36
+}
+
+// Type
+.line-height-default {
+    line-height: 1;
+}
+.line-height-heading {
+    line-height: $line-height-heading;
+}
+
+// Image utilities
+.object-fit-cover {
+    object-fit: cover;
+}
+
+// Width utilities
+ .ch-75 {
+    width: 75ch;
+ }
+
+// Grid utilities 
+.padded-grid-container {
+    padding: 1rem;
 }
