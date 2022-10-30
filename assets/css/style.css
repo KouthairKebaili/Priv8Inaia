@@ -1,9 +1,9 @@
 .color-primary {
-  color: #16317E;
+  color: #16317e;
 }
 
 .bg-primary {
-  background-color: #16317E !important;
+  background-color: #16317e !important;
 }
 
 .color-white {
@@ -15,11 +15,11 @@
 }
 
 .color-accordion-legend {
-  color: #7F8FA4;
+  color: #7f8fa4;
 }
 
 .bg-light {
-  background-color: #F9F9F9 !important;
+  background-color: #f9f9f9 !important;
 }
 
 .font-primary {
@@ -84,7 +84,7 @@
 
 .object-fit-cover {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .ch-75 {
@@ -111,7 +111,7 @@ section {
 }
 
 .btn {
-  background-color: #16317E;
+  background-color: #16317e;
   color: white;
   border-radius: 2.5rem;
   padding: 14px 26px;
@@ -121,8 +121,8 @@ section {
 }
 .btn:hover {
   background-color: white;
-  color: #16317E;
-  border: 1px solid #16317E;
+  color: #16317e;
+  border: 1px solid #16317e;
 }
 
 #carouselExampleDark.carousel {
@@ -142,20 +142,22 @@ section {
   border: 0;
   border-radius: 2.5rem;
   background-color: white;
-  border: 2px solid #16317E;
+  border: 2px solid #16317e;
 }
-#carouselExampleDark.carousel .carousel-indicators > button[data-bs-target].active {
-  background-color: #16317E;
-  border: 0px solid #16317E;
+#carouselExampleDark.carousel
+  .carousel-indicators
+  > button[data-bs-target].active {
+  background-color: #16317e;
+  border: 0px solid #16317e;
 }
 #carouselExampleDark.carousel .carousel-inner .carousel-item {
   height: calc(100vh - 102px);
 }
 #carouselExampleDark.carousel .carousel-inner .carousel-item > img {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: center center;
-     object-position: center center;
+  object-position: center center;
 }
 #carouselExampleDark.carousel .carousel-inner .carousel-item .carousel-caption {
   display: flex;
@@ -169,7 +171,7 @@ section {
 
 section.bg-clipped {
   -webkit-clip-path: polygon(0 0, 100% 11%, 100% 87%, 0% 100%);
-          clip-path: polygon(0 0, 100% 11%, 100% 87%, 0% 100%);
+  clip-path: polygon(0 0, 100% 11%, 100% 87%, 0% 100%);
 }
 
 section.first-section .container {
@@ -229,11 +231,14 @@ section.second-section ul.custom-marker-list {
 }
 section.second-section ul.custom-marker-list.check-style li .marker::before {
   content: "\f00c";
-  color: #FF6200;
+  color: #ff6200;
 }
-section.second-section ul.custom-marker-list.red-cross-style li .marker::before {
+section.second-section
+  ul.custom-marker-list.red-cross-style
+  li
+  .marker::before {
   content: "\f00d";
-  color: #FF0000;
+  color: #ff0000;
 }
 section.second-section ul.custom-marker-list li {
   font-family: "Avenir", sans-serif;
@@ -275,35 +280,59 @@ section.third-section .rectangle-backlight-container .rectangle-backlight {
   opacity: 0.2;
 }
 
-section.fourth-section #accordionFlushExample.accordion.accordion-flush .accordion-item.no-collapse {
+section.fourth-section
+  #accordionFlushExample.accordion.accordion-flush
+  .accordion-item.no-collapse {
   padding: 1rem;
 }
-section.fourth-section #accordionFlushExample.accordion.accordion-flush .accordion-item.no-collapse header {
+section.fourth-section
+  #accordionFlushExample.accordion.accordion-flush
+  .accordion-item.no-collapse
+  header {
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
-section.fourth-section #accordionFlushExample.accordion.accordion-flush .accordion-item.no-collapse header > * {
+section.fourth-section
+  #accordionFlushExample.accordion.accordion-flush
+  .accordion-item.no-collapse
+  header
+  > * {
   padding: 4rem 0;
 }
-section.fourth-section #accordionFlushExample.accordion.accordion-flush .accordion-item .accordion-header a.accordion-button {
+section.fourth-section
+  #accordionFlushExample.accordion.accordion-flush
+  .accordion-item
+  .accordion-header
+  a.accordion-button {
   display: grid;
   grid-template-columns: 1fr 2fr;
   text-decoration: none;
   padding: 4rem 1rem;
-  background-color: #F7FCFF;
+  background-color: #f7fcff;
 }
-section.fourth-section #accordionFlushExample.accordion.accordion-flush .accordion-item .accordion-header a.accordion-button::after {
+section.fourth-section
+  #accordionFlushExample.accordion.accordion-flush
+  .accordion-item
+  .accordion-header
+  a.accordion-button::after {
   position: absolute;
   right: 30px;
   height: 2rem;
   width: 2rem;
   background-size: 2rem;
 }
-section.fourth-section #accordionFlushExample.accordion.accordion-flush .accordion-item .accordion-header .accordion-body {
+section.fourth-section
+  #accordionFlushExample.accordion.accordion-flush
+  .accordion-item
+  .accordion-header
+  .accordion-body {
   padding: 0;
 }
-section.fourth-section #accordionFlushExample.accordion.accordion-flush .accordion-item:last-child {
-  border-bottom: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color);
+section.fourth-section
+  #accordionFlushExample.accordion.accordion-flush
+  .accordion-item:last-child {
+  border-bottom: var(--bs-accordion-border-width) solid
+    var(--bs-accordion-border-color);
 }
 
 section.fifth-section .grid-container {
@@ -316,7 +345,7 @@ section.fifth-section .grid-container .grid-item {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   border-radius: 1rem;
   align-items: center;
   justify-content: space-around;
@@ -336,4 +365,4 @@ section.fifth-section .grid-container .grid-item p {
   font-family: "Noah", sans-serif;
   font-weight: 400;
   font-size: 14px;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
