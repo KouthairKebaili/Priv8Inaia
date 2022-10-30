@@ -1,23 +1,23 @@
-body{
-    background-color: #f7f7f7;
-    margin-top:20px;
-}
+
 
 .main-timeline {
-    position: relative
+    position: relative;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
 .main-timeline:before {
     content: "";
     display: block;
-    width: 2px;
+    width: 6px;
     height: 100%;
-    background: #c6c6c6;
+    background: #72C0EA;
     margin: 0 auto;
     position: absolute;
     top: 0;
     left: 0;
     right: 0
+
 }
 
 .main-timeline .timeline {
@@ -55,42 +55,21 @@ body{
     transition: all 0.33s ease-out 0s
 }
 
-.main-timeline .icon:before {
-    background: #fff;
-    border: 2px solid #232323;
-    left: -3px
-}
+
 
 .main-timeline .icon:after {
-    border: 2px solid #c6c6c6;
-    left: 3px
+    width: 21px;
+height: 21px;
+background: #72C0EA;
 }
 
-.main-timeline .timeline:hover .icon:before {
-    left: 3px
-}
 
-.main-timeline .timeline:hover .icon:after {
-    left: -3px
-}
 
 .main-timeline .date-content {
     width: 50%;
     float: left;
     margin-top: 22px;
     position: relative
-}
-
-.main-timeline .date-content:before {
-    content: "";
-    width: 36.5%;
-    height: 2px;
-    background: #c6c6c6;
-    margin: auto 0;
-    position: absolute;
-    top: 0;
-    right: 10px;
-    bottom: 0
 }
 
 .main-timeline .date-outer {
@@ -116,40 +95,36 @@ body{
     transition: all 0.33s ease-out 0s
 }
 
-.main-timeline .date-outer:before {
-    background: #fff;
-    border: 2px solid #232323;
-    left: -6px
+.main-timeline .date-outer::before {
+    background: #E8F6FB;
+    left : -3px;
+    width: 87px;
+    height: 87px;
+}
+.main-timeline .date-outer::after {
+
+    border: 9px solid #72C0EA;
+    left: 90px;
+    top : -10px;
 }
 
-.main-timeline .date-outer:after {
-    border: 2px solid #c6c6c6;
-    left: 6px
-}
 
-.main-timeline .timeline:hover .date-outer:before {
-    left: 6px
-}
 
-.main-timeline .timeline:hover .date-outer:after {
-    left: -6px
-}
+
 
 .main-timeline .date {
     width: 100%;
     margin: auto;
     position: absolute;
-    top: 27%;
-    left: 0
+    top: 20%;
+    left: 45px;
 }
 
-.main-timeline .month {
-    font-size: 18px;
-    font-weight: 700
-}
+
+
 
 .main-timeline .year {
-    display: block;
+
     font-size: 30px;
     font-weight: 700;
     color: #232323;
