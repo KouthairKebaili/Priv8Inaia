@@ -1,3 +1,4 @@
+// Medium screens
 @media (min-width: 992px) {
     section.second-section {
         .left-side {
@@ -6,20 +7,43 @@
             }
         }
     }
+    section.sixth-section {
+        .container {
+            .row {
+                button {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
 }
 
+// Small screens
 @media (min-width: 768px) {
-
+    .w-sm-100 {
+        width: 100% !important;
+    }
+    .font-size-sm-12 {
+        font-size: $font-size-12;
+    }
+    .font-size-sm-16 {
+        font-size: $font-size-16;
+    }
+    .font-size-sm-18 {
+        font-size: $font-size-18;
+    }
+    section.sixth-section {
+        .container {
+            .row {
+                button {
+                    font-size: $font-size-12;
+                }
+            }
+        }
+    }
 }
 
-@media (min-width: 575px) and (max-width: 767px) {
-
-}
-
-@media (max-width: 574px) {
-
-}
-
+// Extra small screen
 @media (max-width: 767px) {
     .font-size-xs-12 {
         font-size: $font-size-12;
@@ -42,6 +66,13 @@
     button {
         font-size: $font-size-12 !important;
     }
+    section.second-section {
+        .container {
+            .row {
+                gap: 2rem;
+            }
+        }
+    }
     section.fourth-section {
         // Accordion overrides
         #accordionFlushExample.accordion.accordion-flush  {
@@ -56,4 +87,20 @@
            }
         }
     }
+    section.sixth-section {
+        .container {
+            .row {
+                flex-direction: column-reverse;
+                gap: 2rem;
+            }
+        }
+    }
+    footer {
+     .contact-links {
+         @media (max-width: 767px) {
+            align-items: flex-start !important;
+            flex-direction: column;
+        }
+    }
+ }
 }

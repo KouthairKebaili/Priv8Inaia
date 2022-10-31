@@ -1,384 +1,228 @@
-// -------------------------------------------------
-
-// Responsive Vertical Timeline - by CodyHouse.co
-
-// -------------------------------------------------
-:root {
-    // colors
-    // @include defineColorHSL(--cd-color-1, 206, 21%, 24%); // Navy
-    // @include defineColorHSL(--cd-color-2, 205, 38%, 89%); // Blue
-    // @include defineColorHSL(--cd-color-3, 207, 10%, 55%); // Grey
-    // @include defineColorHSL(--cd-color-4, 111, 51%, 60%); // Green
-    // @include defineColorHSL(--cd-color-5, 356, 53%, 49%); // Red
-    // @include defineColorHSL(--cd-color-6, 47, 85%, 61%); // Yellow
-
-    --cd-color-1 : Navy;
-    --cd-color-2 : blue;
-    --cd-color-3 : grey;
-    --cd-color-4 : green;
-    --cd-color-5 : red;
-    --cd-color-6 : yellow;
-    // header
-    --cd-header-height: 200px;
-
-    // font
-    --font-primary: 'Droid Serif', serif;
-    --font-secondary: 'Open Sans', sans-serif;
-
-    //spacers
-    --space-unit:  1em;
-    --space-xxxxs: calc(0.125*var(--space-unit));
-    --space-xxxs:  calc(0.25*var(--space-unit));
-    --space-xxs:   calc(0.375*var(--space-unit));
-    --space-xs:    calc(0.5*var(--space-unit));
-    --space-sm:    calc(0.75*var(--space-unit));
-    --space-md:    calc(1.25*var(--space-unit));
-    --space-lg:    calc(2*var(--space-unit));
-    --space-xl:    calc(3.25*var(--space-unit));
-    --space-xxl:   calc(5.25*var(--space-unit));
-    --space-xxxl:  calc(8.5*var(--space-unit));
-    --space-xxxxl: calc(13.75*var(--space-unit));
-    --component-padding: var(--space-md)
-   
-   
-    --max-width-xxs: 32rem;
-    --max-width-xs:  38rem;
-    --max-width-sm:  48rem;
-    --max-width-md:  64rem;
-    --max-width-lg:  80rem;
-    --max-width-xl:  90rem;
-    --max-width-xxl: 120rem
-}
-
-
-@supports(--css: variables) {
-    :root {
-        @media (max-width: 768px) {
-            --cd-header-height: 300px;
-        }
+.main-timeline {
+  position: relative;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  &:before {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 100%;
+    background: #72c0ea;
+    margin: 0 auto;
+    position: absolute;
+    top: 15px;
+    left: 0;
+    right: 0;
+    @media only screen and (max-width: 767px) {
+      margin: 0;
+      left: 7px;
     }
-}
-.cd-main-header {
-    height: var(--cd-header-height);
-    background: var(--cd-color-1);
-    color: var(--color-white);
-
-    h1 {
-        font-family: var(--font-secondary);
-        color: inherit;
-    }
-}
-
-.cd-timeline {
-    overflow: hidden;
-    padding: var(--space-lg) 0;
-    color: var(--cd-color-3);
-    background-color: rgb(var(--cd-color-2), 0.5);
-    font-family: var(--font-primary);
-
-    h2 {
-        font-family: var(--font-secondary);
-        font-weight: 700;
-    }
-
-    .container {
-        width:calc(100% - 1.25em);
-        width:calc(100% - 2*var(--component-padding));
-        margin-left:auto;
-        margin-right:auto
-       }
-       .max-width-xxs {
-        max-width:32rem;
-        max-width:var(--max-width-xxs)
-       }
-       .max-width-xs {
-        max-width:38rem;
-        max-width:var(--max-width-xs)
-       }
-       .max-width-sm {
-        max-width:48rem;
-        max-width:var(--max-width-sm)
-       }
-       .max-width-md {
-        max-width:64rem;
-        max-width:var(--max-width-md)
-       }
-       .max-width-lg {
-        max-width:80rem;
-        max-width:var(--max-width-lg)
-       }
-       .max-width-xl {
-        max-width:90rem;
-        max-width:var(--max-width-xl)
-       }
-       .max-width-xxl {
-        max-width:120rem;
-        max-width:var(--max-width-xxl)
-       }
-       .max-width-adaptive-sm {
-        max-width:38rem;
-        max-width:var(--max-width-xs)
-       }
-       @media(min-width:64rem) {
-        .max-width-adaptive-sm {
-         max-width:48rem;
-         max-width:var(--max-width-sm)
-        }
-       }
-       .max-width-adaptive-md {
-        max-width:38rem;
-        max-width:var(--max-width-xs)
-       }
-       @media(min-width:64rem) {
-        .max-width-adaptive-md {
-         max-width:64rem;
-         max-width:var(--max-width-md)
-        }
-       }
-       .max-width-adaptive,
-       .max-width-adaptive-lg {
-        max-width:38rem;
-        max-width:var(--max-width-xs)
-       }
-       @media(min-width:64rem) {
-        .max-width-adaptive,
-        .max-width-adaptive-lg {
-         max-width:64rem;
-         max-width:var(--max-width-md)
-        }
-       }
-       @media(min-width:90rem) {
-        .max-width-adaptive,
-        .max-width-adaptive-lg {
-         max-width:80rem;
-         max-width:var(--max-width-lg)
-        }
-       }
-       .max-width-adaptive-xl {
-        max-width:38rem;
-        max-width:var(--max-width-xs)
-       }
-       @media(min-width:64rem) {
-        .max-width-adaptive-xl {
-         max-width:64rem;
-         max-width:var(--max-width-md)
-        }
-       }
-       @media(min-width:90rem) {
-        .max-width-adaptive-xl {
-         max-width:90rem;
-         max-width:var(--max-width-xl)
-        }
-       }
-}
-
-.cd-timeline__container {
+  }
+  .timeline {
+    margin-bottom: 40px;
     position: relative;
-    padding: var(--space-md) 0;
-
-    &::before {
-        // this is the timeline vertical line
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 50%;
-        height: 100%;
-        width: 4px;
-        background: rgba(var(--cd-color-2), 0.5);
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
     }
-
-    @media (max-width: 768px) {
-        &::before {
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
+    @media only screen and (max-width: 767px) {
+      margin-bottom: 20px;
     }
-}
-
-.cd-timeline__block {
-    display: flex;
-    position: relative;
-    z-index: 1; // make sure content is above the timeline vertical line
-    margin-bottom: var(--space-lg);
-
     &:last-child {
+      @media only screen and (max-width: 767px) {
         margin-bottom: 0;
+      }
     }
-
-    @media (max-width: 768px) {
-        &:nth-child(even) {
-            flex-direction: row-reverse; // for even blocks -> lay out content from right to left
+    &:nth-child(2n) {
+      .date-content {
+        float: right;
+        display: flex;
+        &:before {
+          left: 10px;
         }
-    }
-}
-
-.cd-timeline__img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    box-shadow: 0 0 0 4px var(--color-white), inset 0 2px 0 rgba(#000, 0.08), 0 3px 0 4px rgba(#000, 0.05);
-
-    img {
-        width: 24px;
-        height: 24px;
-    }
-
-    @media (max-width: 768px) {
-        width: 60px;
-        height: 60px;
-        order: 1; // flex order -> place the image after cd-timeline__content
-        margin-left: calc(5% - 30px);
-        will-change: transform;
-
-        .cd-timeline__block:nth-child(even) & {
-            margin-right: calc(5% - 30px);
+        .date-outer {
+          margin: 0 0 0 40px;
+          @media (max-width: 767px) {
+            margin: 0;
+          }
+          &::before {
+            left: 0;
+            right: -70px;
+          }
         }
-    }
-}
-
-.cd-timeline__img--picture {
-    background-color: var(--cd-color-4);
-}
-
-.cd-timeline__img--movie {
-    background-color: var(--cd-color-5);
-}
-
-.cd-timeline__img--location {
-    background-color: var(--cd-color-6);
-}
-
-.cd-timeline__content {
-    flex-grow: 1; // expand element so that it takes up all the available space inside its parent
-    position: relative;
-    margin-left: var(--space-md);
-    background: var(--color-white);
-    border-radius: var(--radius-md);
-    padding: var(--space-md);
-
-    &::before {
-        // triangle next to content block
-        content: '';
-        position: absolute;
-        top: 16px;
-        right: 100%;
-        // @include triangle(left, 7px, var(--color-white));
-    }
-
-    h2 {
-        color: var(--cd-color-1);
-    }
-
-    @media (max-width: 768px) {
-        width: 45%;
-        flex-grow: 0; // prevent element from growing inside its parent
-        will-change: transform;
-        margin: 0;
-        font-size: 0.8em;
-        --line-height-multiplier: 1.2;
-
-        &::before {
-            // triangle
-            top: 24px;
+      }
+      .timeline-content {
+        padding: 0px 50px 20px 0;
+        text-align: right;
+        @media only screen and (max-width: 991px) {
+          padding: 0px 30px 10px 0;
         }
-
-        .cd-timeline__block:nth-child(odd) &::before {
-            // change triangle direction
-            right: auto;
-            left: 100%;
-            // @include triangle(right, 7px, var(--color-white));
+        @media only screen and (max-width: 767px) {
+          width: 95%;
+          text-align: center;
+          padding: 0;
         }
+      }
     }
-}
-
-.cd-timeline__date {
-    color: rgba(var(--cd-color-3), 0.7);
-
-    @media (max-width: 768px) {
-        position: absolute;
+    &:nth-child(1n) {
+      @media (max-width: 767px) { 
+        .date-content {
+          margin-left: 5%;
+        }
+      }
+    }
+    .icon {
+      width: 18px;
+      height: 18px;
+      line-height: 18px;
+      margin: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      &:before, &:after {
+        content: "";
         width: 100%;
-        left: 120%;
-        top: 20px;
-
-        .cd-timeline__block:nth-child(even) & {
-            left: auto;
-            right: 120%;
-            text-align: right;
+        height: 100%;
+        border-radius: 50%;
+        position: absolute;
+        top: -275%;
+        left: -1px;
+        transition: all 0.33s ease-out 0s;
+        @media (min-width: 992px) and (max-width: 1199px) {
+          top: -330%;
         }
+        @media (min-width: 768px) and (max-width: 991px) {
+          top: -370%;
+        }
+        @media (max-width: 767px) {
+          top: -525%;
+          left: 0px;
+        }
+      }
+      &:after {
+        width: 21px;
+        height: 21px;
+        background: #72c0ea;
+      }
+      @media only screen and (max-width: 767px) {
+        margin: auto 0;
+      }
     }
-}
-
-@media (max-width: 768px) {
-
-    // animations
-    .cd-timeline__img--hidden,
-    .cd-timeline__content--hidden {
-        visibility: hidden;
+    .date-content {
+      width: 50%;
+      float: left;
+      position: relative;
+      @media only screen and (max-width: 991px) {
+        margin-top: 35px;
+      }
+      &:before {
+        @media only screen and (max-width: 991px) {
+          width: 22.5%;
+        }
+        @media only screen and (max-width: 767px) {
+          display: none;
+        }
+      }
+      @media only screen and (max-width: 767px) {
+        width: 95%;
+        float: right;
+        margin-top: 0;
+      }
+      .date-outer {
+        width: 125px;
+        height: 125px;
+        font-size: 16px;
+        text-align: center;
+        z-index: 1;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 40px 0 0;
+        float: right;
+        &:before,
+        &:after {
+          content: "";
+          width: 125px;
+          height: 125px;
+          margin: 0 auto;
+          border-radius: 50%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          transition: all 0.33s ease-out 0s;
+        }
+        &:before {
+          background: #e8f6fb;
+          left: -70px;
+          width: 87px;
+          height: 87px;
+          top: 15%;
+        }
+        &:after {
+          border: 9px solid #72c0ea;
+          /* left: 90px; */
+          top: 0px;
+        }
+        @media only screen and (max-width: 767px) {
+          width: 110px;
+          height: 110px;
+          &:before {
+            width: 80px;
+            height: 80px;
+          }
+          &:after {
+            width: 110px;
+            height: 110px;
+          }
+        }
+        .date {
+          width: 100%;
+          position: absolute;
+          left: 0px;
+        }
+      }
+      @media (max-width: 767px) {
+        float: none;
+        margin: 0;
+        width: 95%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .date-outer {
+          margin: 0 !important;
+        }
+      }
     }
-
-    .cd-timeline__img--bounce-in {
-        animation: cd-bounce-1 0.6s;
+    .timeline-content {
+      width: 50%;
+      padding: 0px 0 20px 50px;
+      float: right;
+      @media only screen and (max-width: 991px) {
+        padding: 0px 0 10px 30px;
+      }
+      @media only screen and (max-width: 767px) {
+        width: 95%;
+        text-align: center;
+        padding: 0;
+      }
+      .title {
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 24px;
+        margin: 2px 0 15px 0;
+        @media only screen and (max-width: 991px) {
+          font-size: 17px;
+          margin-bottom: 10px;
+        }
+      }
+      .description {
+        margin-bottom: 0;
+      }
     }
-
-    .cd-timeline__content--bounce-in {
-        animation: cd-bounce-2 0.6s;
-    }
-
-    .cd-timeline__block:nth-child(even) .cd-timeline__content--bounce-in {
-        animation-name: cd-bounce-2-inverse;
-    }
-}
-
-
-@keyframes cd-bounce-1 {
-    0% {
-        opacity: 0;
-        transform: scale(0.5);
-    }
-
-    60% {
-        opacity: 1;
-        transform: scale(1.2);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
-@keyframes cd-bounce-2 {
-    0% {
-        opacity: 0;
-        transform: translateX(-100px);
-    }
-
-    60% {
-        opacity: 1;
-        transform: translateX(20px);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-}
-
-@keyframes cd-bounce-2-inverse {
-    0% {
-        opacity: 0;
-        transform: translateX(100px);
-    }
-
-    60% {
-        opacity: 1;
-        transform: translateX(-20px);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
+  }
 }
