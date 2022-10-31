@@ -1,5 +1,11 @@
 @media (min-width: 992px) {
-    
+    section.second-section {
+        .left-side {
+            > p {
+                width: 69%;
+            }
+        }
+    }
 }
 
 @media (min-width: 768px) {
@@ -12,4 +18,42 @@
 
 @media (max-width: 574px) {
 
+}
+
+@media (max-width: 767px) {
+    .font-size-xs-12 {
+        font-size: $font-size-12;
+    }
+    .font-size-xs-16 {
+        font-size: $font-size-16;
+    }
+    .font-size-xs-18 {
+        font-size: $font-size-18;
+    }
+    .bg-clipped {
+        clip-path: none !important;
+    }
+    .custom-marker-list {
+        grid-template-columns: 1fr !important;
+    }
+    .fifth-section .grid-container {
+        grid-template-columns: 1fr !important;
+    }
+    button {
+        font-size: $font-size-12 !important;
+    }
+    section.fourth-section {
+        // Accordion overrides
+        #accordionFlushExample.accordion.accordion-flush  {
+          .accordion-item {
+            .accordion-header {
+                a.accordion-button {
+                  &::after {
+                    top: 50px !important;
+                  }
+                }
+              }
+           }
+        }
+    }
 }

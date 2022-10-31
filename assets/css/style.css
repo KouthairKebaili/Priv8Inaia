@@ -1,9 +1,9 @@
 .color-primary {
-  color: #16317e;
+  color: #16317E;
 }
 
 .bg-primary {
-  background-color: #16317e !important;
+  background-color: #16317E !important;
 }
 
 .color-white {
@@ -15,15 +15,15 @@
 }
 
 .color-accordion-legend {
-  color: #7f8fa4;
+  color: #7F8FA4;
 }
 
 .bg-light {
-  background-color: #f9f9f9 !important;
+  background-color: #F9F9F9 !important;
 }
 
 .font-primary {
-  font-family: "Avenir", sans-serif;
+  font-family: "Noah", sans-serif;
 }
 
 .font-secondary {
@@ -84,7 +84,7 @@
 
 .object-fit-cover {
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .ch-75 {
@@ -95,15 +95,47 @@
   padding: 1rem;
 }
 
+@media (min-width: 992px) {
+  section.second-section .left-side > p {
+    width: 69%;
+  }
+}
+@media (max-width: 767px) {
+  .font-size-xs-12 {
+    font-size: 12px;
+  }
+  .font-size-xs-16 {
+    font-size: 16px;
+  }
+  .font-size-xs-18 {
+    font-size: 18px;
+  }
+  .bg-clipped {
+    -webkit-clip-path: none !important;
+            clip-path: none !important;
+  }
+  .custom-marker-list {
+    grid-template-columns: 1fr !important;
+  }
+  .fifth-section .grid-container {
+    grid-template-columns: 1fr !important;
+  }
+  button {
+    font-size: 12px !important;
+  }
+  section.fourth-section #accordionFlushExample.accordion.accordion-flush .accordion-item .accordion-header a.accordion-button::after {
+    top: 50px !important;
+  }
+}
 .navbar {
   z-index: 9999;
 }
 
-#navbar_top.navbar {
+body > header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  padding-top: 102px;
+  z-index: 9999;
 }
 
 section {
@@ -111,7 +143,7 @@ section {
 }
 
 .btn {
-  background-color: #16317e;
+  background-color: #16317E;
   color: white;
   border-radius: 2.5rem;
   padding: 14px 26px;
@@ -121,8 +153,8 @@ section {
 }
 .btn:hover {
   background-color: white;
-  color: #16317e;
-  border: 1px solid #16317e;
+  color: #16317E;
+  border: 1px solid #16317E;
 }
 
 #carouselExampleDark.carousel {
@@ -142,22 +174,20 @@ section {
   border: 0;
   border-radius: 2.5rem;
   background-color: white;
-  border: 2px solid #16317e;
+  border: 2px solid #16317E;
 }
-#carouselExampleDark.carousel
-  .carousel-indicators
-  > button[data-bs-target].active {
-  background-color: #16317e;
-  border: 0px solid #16317e;
+#carouselExampleDark.carousel .carousel-indicators > button[data-bs-target].active {
+  background-color: #16317E;
+  border: 0px solid #16317E;
 }
 #carouselExampleDark.carousel .carousel-inner .carousel-item {
   height: calc(100vh - 102px);
 }
 #carouselExampleDark.carousel .carousel-inner .carousel-item > img {
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   -o-object-position: center center;
-  object-position: center center;
+     object-position: center center;
 }
 #carouselExampleDark.carousel .carousel-inner .carousel-item .carousel-caption {
   display: flex;
@@ -171,7 +201,7 @@ section {
 
 section.bg-clipped {
   -webkit-clip-path: polygon(0 0, 100% 11%, 100% 87%, 0% 100%);
-  clip-path: polygon(0 0, 100% 11%, 100% 87%, 0% 100%);
+          clip-path: polygon(0 0, 100% 11%, 100% 87%, 0% 100%);
 }
 
 section.first-section .container {
@@ -193,7 +223,7 @@ section.second-section .left-side::before {
   left: -75px;
 }
 section.second-section .left-side > p {
-  width: 69%;
+  width: 100%;
 }
 section.second-section .right-side {
   position: relative;
@@ -231,17 +261,14 @@ section.second-section ul.custom-marker-list {
 }
 section.second-section ul.custom-marker-list.check-style li .marker::before {
   content: "\f00c";
-  color: #ff6200;
+  color: #FF6200;
 }
-section.second-section
-  ul.custom-marker-list.red-cross-style
-  li
-  .marker::before {
+section.second-section ul.custom-marker-list.red-cross-style li .marker::before {
   content: "\f00d";
-  color: #ff0000;
+  color: #FF0000;
 }
 section.second-section ul.custom-marker-list li {
-  font-family: "Avenir", sans-serif;
+  font-family: "Noah", sans-serif;
   font-size: 14px;
   font-weight: 900;
   width: 70%;
@@ -267,9 +294,6 @@ section.second-section ul.custom-marker-list li .marker::before {
 section.third-section h2 {
   width: 70%;
 }
-section.third-section .rectangle-backlight-container {
-  padding: 7rem 0;
-}
 section.third-section .rectangle-backlight-container .rectangle-backlight {
   height: 30px;
   width: 240px;
@@ -280,59 +304,48 @@ section.third-section .rectangle-backlight-container .rectangle-backlight {
   opacity: 0.2;
 }
 
-section.fourth-section
-  #accordionFlushExample.accordion.accordion-flush
-  .accordion-item.no-collapse {
+section.fourth-section #accordionFlushExample.accordion.accordion-flush .accordion-item.no-collapse {
   padding: 1rem;
 }
-section.fourth-section
-  #accordionFlushExample.accordion.accordion-flush
-  .accordion-item.no-collapse
-  header {
+section.fourth-section #accordionFlushExample.accordion.accordion-flush .accordion-item.no-collapse header {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  gap: 1rem;
 }
-section.fourth-section
-  #accordionFlushExample.accordion.accordion-flush
-  .accordion-item.no-collapse
-  header
-  > * {
+section.fourth-section #accordionFlushExample.accordion.accordion-flush .accordion-item.no-collapse header > * {
   padding: 4rem 0;
 }
-section.fourth-section
-  #accordionFlushExample.accordion.accordion-flush
-  .accordion-item
-  .accordion-header
-  a.accordion-button {
+section.fourth-section #accordionFlushExample.accordion.accordion-flush .accordion-item .accordion-header a.accordion-button {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  gap: 1rem;
   text-decoration: none;
   padding: 4rem 1rem;
-  background-color: #f7fcff;
+  background-color: #F7FCFF;
+  box-shadow: none;
 }
-section.fourth-section
-  #accordionFlushExample.accordion.accordion-flush
-  .accordion-item
-  .accordion-header
-  a.accordion-button::after {
+section.fourth-section #accordionFlushExample.accordion.accordion-flush .accordion-item .accordion-header a.accordion-button::after {
   position: absolute;
   right: 30px;
   height: 2rem;
   width: 2rem;
   background-size: 2rem;
 }
-section.fourth-section
-  #accordionFlushExample.accordion.accordion-flush
-  .accordion-item
-  .accordion-header
-  .accordion-body {
+section.fourth-section #accordionFlushExample.accordion.accordion-flush .accordion-item .accordion-header .accordion-body {
   padding: 0;
 }
-section.fourth-section
-  #accordionFlushExample.accordion.accordion-flush
-  .accordion-item:last-child {
-  border-bottom: var(--bs-accordion-border-width) solid
-    var(--bs-accordion-border-color);
+section.fourth-section #accordionFlushExample.accordion.accordion-flush .accordion-item:last-child {
+  border-bottom: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color);
+}
+section.fourth-section #accordionFlushExample.accordion.accordion-flush .accordion-item div[id^=flush-collapse] {
+  background-color: #F7FCFF;
+  grid-template-columns: 1fr 2fr;
+}
+section.fourth-section #accordionFlushExample.accordion.accordion-flush .accordion-item div[id^=flush-collapse].show, section.fourth-section #accordionFlushExample.accordion.accordion-flush .accordion-item div[id^=flush-collapse].collapsing {
+  display: grid;
+}
+section.fourth-section #accordionFlushExample.accordion.accordion-flush .accordion-item div[id^=flush-collapse] .accordion-body {
+  padding-left: 0;
 }
 
 section.fifth-section .grid-container {
@@ -345,7 +358,7 @@ section.fifth-section .grid-container .grid-item {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  background-color: #f7f7f7;
+  background-color: #F7F7F7;
   border-radius: 1rem;
   align-items: center;
   justify-content: space-around;
@@ -365,4 +378,4 @@ section.fifth-section .grid-container .grid-item p {
   font-family: "Noah", sans-serif;
   font-weight: 400;
   font-size: 14px;
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
