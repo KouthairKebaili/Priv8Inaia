@@ -358,7 +358,7 @@
     width: 69%;
   }
   section.sixth-section .container .row button {
-    font-size: 15px;
+    font-size: 15px !important;
   }
 }
 @media (min-width: 768px) {
