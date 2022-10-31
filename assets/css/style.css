@@ -95,9 +95,287 @@
   padding: 1rem;
 }
 
+.main-timeline {
+  position: relative;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.main-timeline:before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 100%;
+  background: #72c0ea;
+  margin: 0 auto;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  right: 0;
+}
+@media only screen and (max-width: 767px) {
+  .main-timeline:before {
+    margin: 0;
+    left: 7px;
+  }
+}
+.main-timeline .timeline {
+  margin-bottom: 40px;
+  position: relative;
+}
+.main-timeline .timeline:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+@media only screen and (max-width: 767px) {
+  .main-timeline .timeline {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .main-timeline .timeline:last-child {
+    margin-bottom: 0;
+  }
+}
+.main-timeline .timeline:nth-child(2n) .date-content {
+  float: right;
+  display: flex;
+}
+.main-timeline .timeline:nth-child(2n) .date-content:before {
+  left: 10px;
+}
+.main-timeline .timeline:nth-child(2n) .date-content .date-outer {
+  margin: 0 0 0 40px;
+}
+@media (max-width: 767px) {
+  .main-timeline .timeline:nth-child(2n) .date-content .date-outer {
+    margin: 0;
+  }
+}
+.main-timeline .timeline:nth-child(2n) .date-content .date-outer::before {
+  left: 0;
+  right: -70px;
+}
+.main-timeline .timeline:nth-child(2n) .timeline-content {
+  padding: 0px 50px 20px 0;
+  text-align: right;
+}
+@media only screen and (max-width: 991px) {
+  .main-timeline .timeline:nth-child(2n) .timeline-content {
+    padding: 0px 30px 10px 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .main-timeline .timeline:nth-child(2n) .timeline-content {
+    width: 95%;
+    text-align: center;
+    padding: 0;
+  }
+}
+@media (max-width: 767px) {
+  .main-timeline .timeline:nth-child(1n) .date-content {
+    margin-left: 5%;
+  }
+}
+.main-timeline .timeline .icon {
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.main-timeline .timeline .icon:before, .main-timeline .timeline .icon:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+  top: -275%;
+  left: -1px;
+  transition: all 0.33s ease-out 0s;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .main-timeline .timeline .icon:before, .main-timeline .timeline .icon:after {
+    top: -330%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-timeline .timeline .icon:before, .main-timeline .timeline .icon:after {
+    top: -370%;
+  }
+}
+@media (max-width: 767px) {
+  .main-timeline .timeline .icon:before, .main-timeline .timeline .icon:after {
+    top: -525%;
+    left: 0px;
+  }
+}
+.main-timeline .timeline .icon:after {
+  width: 21px;
+  height: 21px;
+  background: #72c0ea;
+}
+@media only screen and (max-width: 767px) {
+  .main-timeline .timeline .icon {
+    margin: auto 0;
+  }
+}
+.main-timeline .timeline .date-content {
+  width: 50%;
+  float: left;
+  position: relative;
+}
+@media only screen and (max-width: 991px) {
+  .main-timeline .timeline .date-content {
+    margin-top: 35px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .main-timeline .timeline .date-content:before {
+    width: 22.5%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .main-timeline .timeline .date-content:before {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .main-timeline .timeline .date-content {
+    width: 95%;
+    float: right;
+    margin-top: 0;
+  }
+}
+.main-timeline .timeline .date-content .date-outer {
+  width: 125px;
+  height: 125px;
+  font-size: 16px;
+  text-align: center;
+  z-index: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 40px 0 0;
+  float: right;
+}
+.main-timeline .timeline .date-content .date-outer:before, .main-timeline .timeline .date-content .date-outer:after {
+  content: "";
+  width: 125px;
+  height: 125px;
+  margin: 0 auto;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.33s ease-out 0s;
+}
+.main-timeline .timeline .date-content .date-outer:before {
+  background: #e8f6fb;
+  left: -70px;
+  width: 87px;
+  height: 87px;
+  top: 15%;
+}
+.main-timeline .timeline .date-content .date-outer:after {
+  border: 9px solid #72c0ea;
+  /* left: 90px; */
+  top: 0px;
+}
+@media only screen and (max-width: 767px) {
+  .main-timeline .timeline .date-content .date-outer {
+    width: 110px;
+    height: 110px;
+  }
+  .main-timeline .timeline .date-content .date-outer:before {
+    width: 80px;
+    height: 80px;
+  }
+  .main-timeline .timeline .date-content .date-outer:after {
+    width: 110px;
+    height: 110px;
+  }
+}
+.main-timeline .timeline .date-content .date-outer .date {
+  width: 100%;
+  position: absolute;
+  left: 0px;
+}
+@media (max-width: 767px) {
+  .main-timeline .timeline .date-content {
+    float: none;
+    margin: 0;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main-timeline .timeline .date-content .date-outer {
+    margin: 0 !important;
+  }
+}
+.main-timeline .timeline .timeline-content {
+  width: 50%;
+  padding: 0px 0 20px 50px;
+  float: right;
+}
+@media only screen and (max-width: 991px) {
+  .main-timeline .timeline .timeline-content {
+    padding: 0px 0 10px 30px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .main-timeline .timeline .timeline-content {
+    width: 95%;
+    text-align: center;
+    padding: 0;
+  }
+}
+.main-timeline .timeline .timeline-content .title {
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 2px 0 15px 0;
+}
+@media only screen and (max-width: 991px) {
+  .main-timeline .timeline .timeline-content .title {
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+}
+.main-timeline .timeline .timeline-content .description {
+  margin-bottom: 0;
+}
+
 @media (min-width: 992px) {
   section.second-section .left-side > p {
     width: 69%;
+  }
+  section.sixth-section .container .row button {
+    font-size: 15px;
+  }
+}
+@media (min-width: 768px) {
+  .w-sm-100 {
+    width: 100% !important;
+  }
+  .font-size-sm-12 {
+    font-size: 12px;
+  }
+  .font-size-sm-16 {
+    font-size: 16px;
+  }
+  .font-size-sm-18 {
+    font-size: 18px;
+  }
+  section.sixth-section .container .row button {
+    font-size: 12px;
   }
 }
 @media (max-width: 767px) {
@@ -123,12 +401,28 @@
   button {
     font-size: 12px !important;
   }
+  section.second-section .container .row {
+    gap: 2rem;
+  }
   section.fourth-section #accordionFlushExample.accordion.accordion-flush .accordion-item .accordion-header a.accordion-button::after {
     top: 50px !important;
+  }
+  section.sixth-section .container .row {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+}
+@media (max-width: 767px) and (max-width: 767px) {
+  footer .contact-links {
+    align-items: flex-start !important;
+    flex-direction: column;
   }
 }
 .navbar {
   z-index: 9999;
+}
+.navbar .navbar-brand {
+  width: 160px;
 }
 
 body > header {
@@ -205,7 +499,8 @@ section.bg-clipped {
 }
 
 section.first-section .container {
-  padding: 3rem 0;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 section.second-section .left-side {
@@ -313,14 +608,14 @@ section.fourth-section #accordionFlushExample.accordion.accordion-flush .accordi
   gap: 1rem;
 }
 section.fourth-section #accordionFlushExample.accordion.accordion-flush .accordion-item.no-collapse header > * {
-  padding: 4rem 0;
+  padding: 1rem 0;
 }
 section.fourth-section #accordionFlushExample.accordion.accordion-flush .accordion-item .accordion-header a.accordion-button {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 1rem;
   text-decoration: none;
-  padding: 4rem 1rem;
+  padding: 1rem;
   background-color: #F7FCFF;
   box-shadow: none;
 }
@@ -345,7 +640,7 @@ section.fourth-section #accordionFlushExample.accordion.accordion-flush .accordi
   display: grid;
 }
 section.fourth-section #accordionFlushExample.accordion.accordion-flush .accordion-item div[id^=flush-collapse] .accordion-body {
-  padding-left: 0;
+  padding-left: 1rem;
 }
 
 section.fifth-section .grid-container {
@@ -378,4 +673,16 @@ section.fifth-section .grid-container .grid-item p {
   font-family: "Noah", sans-serif;
   font-weight: 400;
   font-size: 14px;
+}
+
+section.sixth-section .container .row {
+  display: flex;
+  align-items: center;
+}
+
+footer .footer-img {
+  width: 250px;
+}
+footer .footer-img img {
+  filter: grayscale(100%);
 }/*# sourceMappingURL=style.css.map */
