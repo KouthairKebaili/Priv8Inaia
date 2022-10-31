@@ -360,6 +360,10 @@
   section.sixth-section .container .row button {
     font-size: 15px !important;
   }
+  footer .contact .contact-links {
+    align-items: center !important;
+    flex-direction: row !important;
+  }
 }
 @media (min-width: 768px) {
   .w-sm-100 {
@@ -376,6 +380,10 @@
   }
   section.sixth-section .container .row button {
     font-size: 12px;
+  }
+  footer .contact .contact-links {
+    align-items: flex-start !important;
+    flex-direction: column;
   }
 }
 @media (max-width: 767px) {
@@ -411,9 +419,11 @@
     flex-direction: column-reverse;
     gap: 2rem;
   }
-}
-@media (max-width: 767px) and (max-width: 767px) {
-  footer .contact-links {
+  footer .contact {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  footer .contact .contact-links {
     align-items: flex-start !important;
     flex-direction: column;
   }
