@@ -7,10 +7,10 @@
   z-index: 9999;
 }
 
-#navbar_top.navbar {
+body > header {
   position: sticky;
   top : 0;
-  padding-top: 102px
+  z-index: 9999;
 }
 
 section {
@@ -79,8 +79,10 @@ section.bg-clipped {
   clip-path: polygon(0 0, 100% 11%, 100% 87%, 0% 100%);
 }
 
-section.first-section .container {
-  padding: 3rem 0;
+section.first-section {
+  .container {
+    padding: 3rem 0;
+  }
 }
 
 section.second-section {
@@ -98,7 +100,7 @@ section.second-section {
       left: -75px;
     }
     > p {
-      width: 69%;
+      width: 100%;
     }
   }
   .right-side {
@@ -181,7 +183,6 @@ section.third-section {
     width: 70%;
   }
   .rectangle-backlight-container {
-    padding: 7rem 0;
     .rectangle-backlight {
       height: 30px;
       width: 240px;
@@ -203,6 +204,7 @@ section.fourth-section {
         header {
           display: grid;
           grid-template-columns: 1fr 2fr;
+          gap: 1rem;
           > * {
             padding: 4rem 0;
           }
@@ -212,9 +214,11 @@ section.fourth-section {
         a.accordion-button {
           display: grid;
           grid-template-columns: 1fr 2fr;
+          gap: 1rem;
           text-decoration: none;
           padding: 4rem 1rem;
           background-color: #F7FCFF;
+          box-shadow: none;
           &::after {
             position: absolute;
             right: 30px;
@@ -229,6 +233,16 @@ section.fourth-section {
       }
       &:last-child {
         border-bottom: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color);
+      }
+      div[id^=flush-collapse] {
+        background-color: #F7FCFF;
+        grid-template-columns: 1fr 2fr;
+        &.show, &.collapsing {
+          display: grid;
+        }
+        .accordion-body {
+          padding-left: 0
+        }
       }
     }
   }
