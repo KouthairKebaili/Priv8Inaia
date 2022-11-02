@@ -351,6 +351,7 @@
 }
 .main-timeline .timeline .timeline-content .description {
   margin-bottom: 0;
+  text-align: justify;
 }
 
 @media (min-width: 992px) {
@@ -537,7 +538,7 @@ section.second-section .right-side::before {
   content: "";
   position: absolute;
   display: block;
-  background-image: url("../images/pseudo-elements/Rectangle1.png");
+  /* background-image: url("../images/pseudo-elements/Rectangle1.png"); */
   background-size: 100%;
   width: 16px;
   height: 16px;
@@ -548,7 +549,7 @@ section.second-section .right-side::after {
   content: "";
   position: absolute;
   display: block;
-  background-image: url("../images/pseudo-elements/Rectangle2.png");
+  /* background-image: url("../images/pseudo-elements/Rectangle2.png"); */
   background-size: 100%;
   width: 16px;
   height: 16px;
@@ -566,11 +567,11 @@ section.second-section ul.custom-marker-list {
 }
 section.second-section ul.custom-marker-list.check-style li .marker::before {
   content: "\f00c";
-  color: #FF6200;
+  color: #72c0ea;
 }
 section.second-section ul.custom-marker-list.red-cross-style li .marker::before {
   content: "\f00d";
-  color: #FF0000;
+  color: #72c0ea;
 }
 section.second-section ul.custom-marker-list li {
   font-family: "Noah", sans-serif;
