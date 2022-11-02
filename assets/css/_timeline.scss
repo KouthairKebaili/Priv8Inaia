@@ -7,7 +7,7 @@
     display: block;
     width: 6px;
     height: 100%;
-    background: #72c0ea;
+    background: $color-timeline;
     margin: 0 auto;
     position: absolute;
     top: 15px;
@@ -105,7 +105,7 @@
       &:after {
         width: 21px;
         height: 21px;
-        background: #72c0ea;
+        background: $color-timeline;
       }
       @media only screen and (max-width: 767px) {
         margin: auto 0;
@@ -164,7 +164,7 @@
           top: 15%;
         }
         &:after {
-          border: 9px solid #72c0ea;
+          border: 9px solid $color-timeline;
           /* left: 90px; */
           top: 0px;
         }
@@ -222,6 +222,7 @@
       }
       .description {
         margin-bottom: 0;
+        text-align: justify;
       }
     }
   }
