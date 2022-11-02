@@ -351,6 +351,7 @@
 }
 .main-timeline .timeline .timeline-content .description {
   margin-bottom: 0;
+  text-align: justify;
 }
 
 @media (min-width: 992px) {
