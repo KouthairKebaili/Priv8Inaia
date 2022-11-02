@@ -521,7 +521,6 @@ section.second-section .left-side::before {
   content: "";
   position: absolute;
   display: block;
-  /* background-image: url("../images/pseudo-elements/Star.png"); */
   background-size: 100%;
   width: 69px;
   height: 69px;
@@ -538,7 +537,6 @@ section.second-section .right-side::before {
   content: "";
   position: absolute;
   display: block;
-  /* background-image: url("../images/pseudo-elements/Rectangle1.png"); */
   background-size: 100%;
   width: 16px;
   height: 16px;
@@ -549,7 +547,6 @@ section.second-section .right-side::after {
   content: "";
   position: absolute;
   display: block;
-  /* background-image: url("../images/pseudo-elements/Rectangle2.png"); */
   background-size: 100%;
   width: 16px;
   height: 16px;
