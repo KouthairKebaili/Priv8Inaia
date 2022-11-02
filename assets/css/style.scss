@@ -3,7 +3,9 @@
 @import "timeline";
 @import "responsive";
 
-
+body{
+font-family: $font-family-primary !important;
+}
 .navbar {
   z-index: 9999;
   .navbar-brand {
