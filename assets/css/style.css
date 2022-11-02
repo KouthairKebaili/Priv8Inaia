@@ -1,3 +1,11 @@
+:root {
+  --bs-body-font-family: Avenir LT Std, sans-serif;
+}
+
+:root {
+  --bs-body-font-family: Avenir LT Std, sans-serif;
+}
+
 .color-primary {
   color: #16317E;
 }
@@ -23,11 +31,11 @@
 }
 
 .font-primary {
-  font-family: "Noah", sans-serif;
+  font-family: Avenir LT Std, sans-serif;
 }
 
 .font-secondary {
-  font-family: "Noah", sans-serif;
+  font-family: Avenir LT Std, sans-serif;
 }
 
 .font-regular {
@@ -429,6 +437,10 @@
     flex-direction: column;
   }
 }
+body {
+  font-family: Avenir LT Std, sans-serif !important;
+}
+
 .navbar {
   z-index: 9999;
 }
@@ -571,7 +583,7 @@ section.second-section ul.custom-marker-list.red-cross-style li .marker::before 
   color: #72c0ea;
 }
 section.second-section ul.custom-marker-list li {
-  font-family: "Noah", sans-serif;
+  font-family: Avenir LT Std, sans-serif;
   font-size: 14px;
   font-weight: 900;
   width: 70%;
@@ -672,13 +684,13 @@ section.fifth-section .grid-container .grid-item img {
   margin-bottom: 0.5rem;
 }
 section.fifth-section .grid-container .grid-item h2 {
-  font-family: "Noah", sans-serif;
+  font-family: Avenir LT Std, sans-serif;
   font-weight: 500;
   font-size: 16px;
   margin-bottom: 20px;
 }
 section.fifth-section .grid-container .grid-item p {
-  font-family: "Noah", sans-serif;
+  font-family: Avenir LT Std, sans-serif;
   font-weight: 400;
   font-size: 14px;
 }
