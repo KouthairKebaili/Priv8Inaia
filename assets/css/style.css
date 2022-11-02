@@ -1,9 +1,11 @@
 :root {
   --bs-body-font-family: Avenir LT Std, sans-serif;
+  --bs-body-color: rgba(0, 0, 0, 0.782);
 }
 
 :root {
   --bs-body-font-family: Avenir LT Std, sans-serif;
+  --bs-body-color: rgba(0, 0, 0, 0.782);
 }
 
 .color-primary {
@@ -19,7 +21,7 @@
 }
 
 .color-black {
-  color: black;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .color-accordion-legend {
@@ -514,6 +516,7 @@ section {
   gap: 20px;
   text-align: left;
   height: 100%;
+  color: var(--bs-body-color);
 }
 
 section.bg-clipped {

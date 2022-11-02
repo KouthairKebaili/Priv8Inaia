@@ -1,5 +1,6 @@
 :root{
     --bs-body-font-family : Avenir LT Std, sans-serif;
+    --bs-body-color : rgba(0, 0, 0, 0.782);
 }
 $font-awesome-free : "Font Awesome 5 Free";
 $font-awesome-brands: "Font Awesome 5 Brands";
@@ -8,6 +9,7 @@ $font-family-secondary: Avenir LT Std, sans-serif !default;
 $color-primary: #16317E;
 $color-accordion-legend: #7F8FA4;
 $color-timeline: #72c0ea;
+$color-black: var(--bs-body-color);
 $bg-light: #F9F9F9;
 
 $font-weight-regular: 400;
