@@ -1,19 +1,19 @@
 :root {
   --bs-body-font-family: Avenir LT Std, sans-serif;
-  --bs-body-color: rgba(0, 0, 0, 0.782);
+  --bs-body-color: rgba(0, 0, 0, 0.8);
 }
 
 :root {
   --bs-body-font-family: Avenir LT Std, sans-serif;
-  --bs-body-color: rgba(0, 0, 0, 0.782);
+  --bs-body-color: rgba(0, 0, 0, 0.8);
 }
 
 .color-primary {
-  color: #16317E;
+  color: #00416D;
 }
 
 .bg-primary {
-  background-color: #16317E !important;
+  background-color: #00416D !important;
 }
 
 .color-white {
@@ -25,7 +25,7 @@
 }
 
 .color-accordion-legend {
-  color: #7F8FA4;
+  color: #464646;
 }
 
 .bg-light {
@@ -438,6 +438,9 @@
     align-items: flex-start !important;
     flex-direction: column;
   }
+  #carouselExampleDark.carousel .carousel-indicators > button[data-bs-target] {
+    display: none;
+  }
 }
 body {
   font-family: Avenir LT Std, sans-serif !important;
@@ -462,7 +465,7 @@ section {
 }
 
 .btn {
-  background-color: #16317E;
+  background-color: #00416D;
   color: white;
   border-radius: 2.5rem;
   padding: 14px 26px;
@@ -472,8 +475,8 @@ section {
 }
 .btn:hover {
   background-color: white;
-  color: #16317E;
-  border: 1px solid #16317E;
+  color: #00416D;
+  border: 1px solid #00416D;
 }
 
 #carouselExampleDark.carousel {
@@ -493,11 +496,11 @@ section {
   border: 0;
   border-radius: 2.5rem;
   background-color: white;
-  border: 2px solid #16317E;
+  border: 2px solid #00416D;
 }
 #carouselExampleDark.carousel .carousel-indicators > button[data-bs-target].active {
-  background-color: #16317E;
-  border: 0px solid #16317E;
+  background-color: #00416D;
+  border: 0px solid #00416D;
 }
 #carouselExampleDark.carousel .carousel-inner .carousel-item {
   height: calc(100vh - 102px);
