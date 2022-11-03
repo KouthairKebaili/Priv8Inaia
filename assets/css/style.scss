@@ -37,7 +37,10 @@ section {
     border: 1px solid $color-primary;
   }
 }
-
+@media only screen and (min-width: 767px) {
+  margin: 0;
+  left: 7px;
+}
 
 #carouselExampleDark.carousel {
   padding: 0;

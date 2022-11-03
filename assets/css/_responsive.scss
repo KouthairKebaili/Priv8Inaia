@@ -63,6 +63,7 @@
             }
         }
     }
+
 }
 
 // Extra small screen
@@ -136,6 +137,13 @@
                 align-items: flex-start !important;
                 flex-direction: column;
             }
+        }
+    }
+    #carouselExampleDark.carousel {
+        .carousel-indicators {
+          > button[data-bs-target] {
+            display: none;
+          }
         }
     }
 }
