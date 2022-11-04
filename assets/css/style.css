@@ -399,6 +399,9 @@
   footer .data {
     display: flex;
   }
+  mark {
+    display: inline-block;
+  }
 }
 @media (max-width: 767px) {
   .font-size-xs-12 {
@@ -714,4 +717,11 @@ footer .footer-img {
 }
 footer .footer-img img {
   filter: grayscale(100%);
+}
+
+mark {
+  background-color: #105796;
+  color: white;
+  line-height: 0.6rem;
+  padding-bottom: 0.9rem;
 }/*# sourceMappingURL=style.css.map */
