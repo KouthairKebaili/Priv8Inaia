@@ -480,9 +480,9 @@ section {
   line-height: 1;
 }
 .btn:hover {
-  background-color: white;
+  background-color: #72c0ea;
   color: #00416D;
-  border: 1px solid #00416D;
+  color: white;
 }
 
 #carouselExampleDark.carousel {
@@ -597,7 +597,7 @@ section.second-section ul.custom-marker-list.red-cross-style li .marker::before 
 section.second-section ul.custom-marker-list li {
   font-family: Avenir LT Std, sans-serif;
   font-size: 14px;
-  font-weight: 900;
+  font-weight: 500;
   width: 70%;
   display: flex;
   align-items: center;
@@ -724,4 +724,8 @@ mark {
   color: white;
   line-height: 0.6rem;
   padding-bottom: 0.9rem;
+}
+
+.icon {
+  color: #00416D;
 }/*# sourceMappingURL=style.css.map */

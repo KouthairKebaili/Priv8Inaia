@@ -32,9 +32,9 @@ section {
   height: 47px;
   line-height: 1;
   &:hover {
-    background-color: white;
+    background-color: $color-timeline;
     color: $color-primary;
-    border: 1px solid $color-primary;
+    color: white;
   }
 }
 
@@ -162,7 +162,7 @@ section.second-section {
     li {
       font-family: $font-family-primary;
       font-size: $font-size-14;
-      font-weight: $font-weight-heavy;
+      font-weight: $font-weight-medium;
       width: 70%;
       display: flex;
       align-items: center;
@@ -314,3 +314,6 @@ mark{
   padding-bottom: 0.9rem;
 }
 
+.icon{
+  color : $color-primary;
+}
