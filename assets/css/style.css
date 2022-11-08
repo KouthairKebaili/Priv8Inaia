@@ -1,10 +1,10 @@
 :root {
-  --bs-body-font-family: Avenir LT Std, sans-serif;
+  --bs-body-font-family: Avenir Next, sans-serif;
   --bs-body-color: rgba(0, 0, 0, 0.8);
 }
 
 :root {
-  --bs-body-font-family: Avenir LT Std, sans-serif;
+  --bs-body-font-family: Avenir Next, sans-serif;
   --bs-body-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -33,11 +33,11 @@
 }
 
 .font-primary {
-  font-family: Avenir LT Std, sans-serif;
+  font-family: Avenir Next, sans-serif;
 }
 
 .font-secondary {
-  font-family: Avenir LT Std, sans-serif;
+  font-family: Avenir Next, sans-serif;
 }
 
 .font-regular {
@@ -449,7 +449,7 @@
   }
 }
 body {
-  font-family: Avenir LT Std, sans-serif !important;
+  font-family: Avenir Next, sans-serif !important;
 }
 
 .navbar {
@@ -482,6 +482,9 @@ section {
 .btn:hover {
   background-color: #72c0ea;
   color: #00416D;
+}
+.btn:focus {
+  background-color: #00416D;
   color: white;
 }
 
@@ -595,7 +598,7 @@ section.second-section ul.custom-marker-list.red-cross-style li .marker::before 
   color: #72c0ea;
 }
 section.second-section ul.custom-marker-list li {
-  font-family: Avenir LT Std, sans-serif;
+  font-family: Avenir Next, sans-serif;
   font-size: 14px;
   font-weight: 500;
   width: 70%;
@@ -696,13 +699,13 @@ section.fifth-section .grid-container .grid-item img {
   margin-bottom: 0.5rem;
 }
 section.fifth-section .grid-container .grid-item h2 {
-  font-family: Avenir LT Std, sans-serif;
+  font-family: Avenir Next, sans-serif;
   font-weight: 500;
   font-size: 16px;
   margin-bottom: 20px;
 }
 section.fifth-section .grid-container .grid-item p {
-  font-family: Avenir LT Std, sans-serif;
+  font-family: Avenir Next, sans-serif;
   font-weight: 400;
   font-size: 14px;
 }
