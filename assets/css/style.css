@@ -1,11 +1,11 @@
 :root {
   --bs-body-font-family: Avenir Next, sans-serif;
-  --bs-body-color: rgba(0, 0, 0, 0.8);
+  --bs-body-color: rgba(0, 0, 0, 0.64);
 }
 
 :root {
   --bs-body-font-family: Avenir Next, sans-serif;
-  --bs-body-color: rgba(0, 0, 0, 0.8);
+  --bs-body-color: rgba(0, 0, 0, 0.64);
 }
 
 .color-primary {
@@ -21,7 +21,7 @@
 }
 
 .color-black {
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.64);
 }
 
 .color-accordion-legend {
@@ -49,11 +49,11 @@
 }
 
 .font-bold {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .font-heavy {
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .font-size-12 {
@@ -483,7 +483,7 @@ section {
   background-color: #72c0ea;
   color: #00416D;
 }
-.btn:focus {
+.btn:hover:focus {
   background-color: #00416D;
   color: white;
 }

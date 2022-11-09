@@ -34,11 +34,12 @@ section {
   &:hover {
     background-color: $color-timeline;
     color: $color-primary;
+    &:focus{
+      background-color: $color-primary;
+      color: white;
+    }
   }
-  &:focus{
-    background-color: $color-primary;
-    color: white;
-  }
+ 
 }
 
 #carouselExampleDark.carousel {
